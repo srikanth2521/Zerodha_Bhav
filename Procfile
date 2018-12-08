@@ -1,1 +1,1 @@
-web: heroku docker:init
+web: python3 app.py
