@@ -9,7 +9,7 @@ services:
   db:
     image: redis
     environment:
-    - REDIS_URL=redis://redis:6379
+    - REDIS_URL=redis://http://50b3f4c@ec2-54-209-190-123.compute-1.amazonaws.com:42239/
     expose:
-    - 6379
+    - 42239
     
