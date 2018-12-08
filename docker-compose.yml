@@ -1,0 +1,15 @@
+version: "3"
+services:
+  web:
+    build: .
+    expose:
+      - 5000
+    depends_on:
+      - db
+  db:
+    image: redis
+    environment:
+    - REDIS_URL=redis://127.0.0.1:6379
+    expose:
+    - 6379
+    
